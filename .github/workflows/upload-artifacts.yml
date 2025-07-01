@@ -44,7 +44,7 @@ jobs:
       run: |
         zip -r ./command-tree-${{ env.name }}.zip ./${{ env.name }}/command-tree
         echo "# Edit me!" > ./${{ env.name }}/conf/conf.yml
-        echo '# Example file @ https://github.com/NebN/command-tree' >> ./${{ env.name }}/conf/conf.yml
+        echo '# Example file @ https://github.com/NebN/command-tree/blob/master/conf/example.yml' >> ./${{ env.name }}/conf/conf.yml
         zip -r ./command-tree-${{ env.name }}.zip ./${{ env.name }}/conf/conf.yml
 
     - name: Upload release artifacts
